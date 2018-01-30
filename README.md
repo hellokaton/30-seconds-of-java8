@@ -1,9 +1,9 @@
 # 30 seconds of java8
 
-[![License](https://img.shields.io/badge/license-CC0--1.0-blue.svg)](https://github.com/biezhi/30-seconds-of-java/blob/master/LICENSE) 
-[![Gitter chat](https://img.shields.io/badge/chat-on%20gitter-4FB999.svg)](https://gitter.im/30-seconds-of-code/Lobby) 
+[![License](https://img.shields.io/badge/license-CC0--1.0-blue.svg)](https://github.com/biezhi/30-seconds-of-java8/blob/master/LICENSE) 
+[![Gitter chat](https://img.shields.io/badge/chat-on%20gitter-4FB999.svg)](https://gitter.im/30-seconds-of-java8/Lobby) 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com) 
-[![Travis Build](https://travis-ci.org/biezhi/30-seconds-of-java.svg?branch=master)](https://travis-ci.org/biezhi/30-seconds-of-java)
+[![Travis Build](https://travis-ci.org/biezhi/30-seconds-of-java8.svg?branch=master)](https://travis-ci.org/biezhi/30-seconds-of-java8)
 [![@biezhi on zhihu](https://img.shields.io/badge/zhihu-%40biezhi-red.svg)](https://www.zhihu.com/people/biezhi)
 [![](https://img.shields.io/github/followers/biezhi.svg?style=social&label=Follow%20Me)](https://github.com/biezhi)
 
