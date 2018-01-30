@@ -58,8 +58,6 @@
 
 </details>
 
-<br>[⬆ 回到顶部](#目录)
-
 ### ➗ Math (数学相关)
 
 <details>
@@ -74,9 +72,6 @@
 * [`generateRandomInt`](#generaterandomint)
 
 </details>
-
-<br>[⬆ 回到顶部](#目录)
-
 
 ### 📜 String (字符串相关)
 
@@ -107,10 +102,7 @@
 * [`words`](#words)
 * [`stringToIntegers`](#stringtointegers)
 
-
 </details>
-
-<br>[⬆ 回到顶部](#目录)
 
 ### ⭕️ IO (IO流相关)
 
@@ -124,8 +116,6 @@
 
 </details>
 
-<br>[⬆ 回到顶部](#目录)
-
 ### ❌ Exception (异常相关)
 
 <details>
@@ -134,8 +124,6 @@
 * [`stackTraceAsString`](#stacktraceasstring)
 
 </details>
-
-<br>[⬆ 回到顶部](#目录)
 
 ### 🖥 System (系统相关)
 
@@ -147,8 +135,6 @@
 
 </details>
 
-<br>[⬆ 回到顶部](#目录)
-
 ### 💡 Class (类相关)
 
 <details>
@@ -159,8 +145,6 @@
 
 </details>
 
-<br>[⬆ 回到顶部](#目录)
-
 ### 💎 Enum (枚举相关)
 
 <details>
@@ -169,8 +153,6 @@
 - [`getEnumMap`](#getenummap)
 
 </details>
-
-<br>[⬆ 回到顶部](#目录)
 
 ## Array
 
@@ -187,6 +169,8 @@ public static int[][] chunk(int[] numbers, int size) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### concat
 
 ```java
@@ -197,6 +181,8 @@ public static <T> T[] concat(T[] first, T[] second) {
     ).toArray(i -> (T[]) Arrays.copyOf(new Object[0], i, first.getClass()));
 }
 ```
+
+<br>[⬆ 回到顶部](#目录)
 
 ### countOccurrences
 
@@ -211,6 +197,8 @@ public static long countOccurrences(int[] numbers, int value) {
             .count();
 }
 ```
+
+<br>[⬆ 回到顶部](#目录)
 
 ### deepFlatten
 
@@ -230,6 +218,8 @@ public static int[] deepFlatten(Object[] input) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### difference
 
 返回两个数组之间的差异。
@@ -244,6 +234,8 @@ public static int[] difference(int[] first, int[] second) {
             .toArray();
 }
 ```
+
+<br>[⬆ 回到顶部](#目录)
 
 ### differenceWith
 
@@ -263,6 +255,8 @@ public static int[] differenceWith(int[] first, int[] second, IntBinaryOperator 
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### distinctValuesOfArray
 
 返回数组的所有不同值。 
@@ -274,6 +268,8 @@ public static int[] distinctValuesOfArray(int[] elements) {
     return Arrays.stream(elements).distinct().toArray();
 }
 ```
+
+<br>[⬆ 回到顶部](#目录)
 
 ### dropElements
 
@@ -289,6 +285,8 @@ public static int[] dropElements(int[] elements, IntPredicate condition) {
     return elements;
 }
 ```
+
+<br>[⬆ 回到顶部](#目录)
 
 ### dropRight
 
@@ -307,6 +305,8 @@ public static int[] dropRight(int[] elements, int n) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### everyNth
 
 返回数组中的每个第n个元素。 
@@ -322,6 +322,8 @@ public static int[] everyNth(int[] elements, int nth) {
  }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### indexOf
 
 查找数组中元素的索引，在不存在元素的情况下返回-1。 
@@ -336,6 +338,8 @@ public static int indexOf(int[] elements, int el) {
             .orElse(-1);
 }
 ```
+
+<br>[⬆ 回到顶部](#目录)
 
 ### lastIndexOf
 
@@ -353,6 +357,8 @@ public static int lastIndexOf(int[] elements, int el) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### filterNonUnique
 
 筛选出数组中的非唯一值。 
@@ -366,6 +372,8 @@ public static int[] filterNonUnique(int[] elements) {
             .toArray();
 }
 ```
+
+<br>[⬆ 回到顶部](#目录)
 
 ### flatten
 
@@ -383,6 +391,8 @@ public static int[] flatten(Object[] elements) {
             ).toArray();
 }
 ```
+
+<br>[⬆ 回到顶部](#目录)
 
 ### flattenDepth
 
@@ -403,6 +413,8 @@ public static Object[] flattenDepth(Object[] elements, int depth) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### groupBy
 
 根据给定函数对数组元素进行分组。
@@ -414,6 +426,8 @@ public static <T, R> Map<R, List<T>> groupBy(T[] elements, Function<T, R> func) 
     return Arrays.stream(elements).collect(Collectors.groupingBy(func));
 }
 ```
+
+<br>[⬆ 回到顶部](#目录)
 
 ### initial
 
@@ -427,6 +441,8 @@ public static <T> T[] initial(T[] elements) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### initializeArrayWithRange
 
 初始化一个数组，该数组包含在指定范围内的数字，传入 `start` 和 `end`。
@@ -437,6 +453,8 @@ public static int[] initializeArrayWithRange(int end, int start) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### initializeArrayWithValues
 
 使用指定的值初始化并填充数组。
@@ -446,6 +464,8 @@ public static int[] initializeArrayWithValues(int n, int value) {
     return IntStream.generate(() -> value).limit(n).toArray();
 }
 ```
+
+<br>[⬆ 回到顶部](#目录)
 
 ### intersection
 
@@ -461,6 +481,8 @@ public static int[] intersection(int[] first, int[] second) {
             .toArray();
 }
 ```
+
+<br>[⬆ 回到顶部](#目录)
 
 ### isSorted
 
@@ -481,6 +503,8 @@ public static <T extends Comparable<? super T>> int isSorted(T[] arr) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### join
 
 将数组的所有元素连接到字符串中，并返回此字符串。
@@ -497,6 +521,8 @@ public static <T> String join(T[] arr, String separator, String end) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### nthElement
 
 返回数组的第n个元素。
@@ -512,6 +538,8 @@ public static <T> T nthElement(T[] arr, int n) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### pick
 
 从对象中选择与给定键对应的键值对。
@@ -525,6 +553,8 @@ public static <T, R> Map<T, R> pick(Map<T, R> obj, T[] arr) {
             .collect(Collectors.toMap(k -> k, obj::get));
 }
 ```
+
+<br>[⬆ 回到顶部](#目录)
 
 ### reducedFilter
 
@@ -543,6 +573,8 @@ public static Map<String, Object>[] reducedFilter(Map<String, Object>[] data, St
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### sample
 
 从数组中返回一个随机元素。
@@ -554,6 +586,8 @@ public static <T> T sample(T[] arr) {
     return arr[(int) Math.floor(Math.random() * arr.length)];
 }
 ```
+
+<br>[⬆ 回到顶部](#目录)
 
 ### sampleSize
 
@@ -576,6 +610,8 @@ public static <T> T[] sampleSize(T[] input, int n) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### shuffle
 
 将数组值的顺序随机化，返回一个新数组。
@@ -597,6 +633,8 @@ public static <T> T[] shuffle(T[] input) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### similarity
 
 返回出现在两个数组中的元素数组。
@@ -611,6 +649,8 @@ public static <T> T[] similarity(T[] first, T[] second) {
             .toArray(i -> (T[]) Arrays.copyOf(new Object[0], i, first.getClass()));
 }
 ```
+
+<br>[⬆ 回到顶部](#目录)
 
 ### sortedIndex
 
@@ -627,6 +667,8 @@ public static <T extends Comparable<? super T>> int sortedIndex(T[] arr, T el) {
             .orElse(arr.length);
 }
 ```
+
+<br>[⬆ 回到顶部](#目录)
 
 ### symmetricDifference
 
@@ -646,6 +688,8 @@ public static <T> T[] symmetricDifference(T[] first, T[] second) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### tail
 
 返回数组中除第一个元素外的所有元素。
@@ -660,9 +704,11 @@ public static <T> T[] tail(T[] arr) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### take
 
-Returns an array with n elements removed from the beginning.
+返回一个从开头删除n个元素的数组。
 
 ```java
 public static <T> T[] take(T[] arr, int n) {
@@ -670,11 +716,13 @@ public static <T> T[] take(T[] arr, int n) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### takeRight
 
-Returns an array with n elements removed from the end.
+返回从末尾移除n个元素的数组。
 
-Use `Arrays.copyOfRange()` to create a slice of the array with `n` elements taken from the end.
+使用 `Arrays.copyOfRange()` 用从末尾取来的 `N` 个元素来创建一个数组。
 
 ```java
 public static <T> T[] takeRight(T[] arr, int n) {
@@ -682,11 +730,13 @@ public static <T> T[] takeRight(T[] arr, int n) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### union
 
-Returns every element that exists in any of the two arrays once.
+返回两个数组中任何一个中存在的每个元素一次。
 
-Create a `Set` with all values of `a` and `b` and convert to an array.
+使用 `a` 和 `b` 的所有值创建一个 `Set`，并将其转换为数组。
 
 ```Java
 public static <T> T[] union(T[] first, T[] second) {
@@ -695,6 +745,8 @@ public static <T> T[] union(T[] first, T[] second) {
     return set.toArray((T[]) Arrays.copyOf(new Object[0], 0, first.getClass()));
 }
 ```
+
+<br>[⬆ 回到顶部](#目录)
 
 ### without
 
