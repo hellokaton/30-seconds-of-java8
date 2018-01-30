@@ -1270,7 +1270,7 @@ public static int[] stringToIntegers(String numbers) {
 
 ### convertInputStreamToString
 
-Converts InputStream to a String.
+将InputStream转换为字符串。
 
 ```java
 public static String convertInputStreamToString(final InputStream in) throws IOException {
@@ -1284,9 +1284,11 @@ public static String convertInputStreamToString(final InputStream in) throws IOE
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### readFileAsString
 
-Reads content of a file to a String
+将文件内容读入字符串。
 
 ```java
 public String readFileAsString(Path path) throws IOException {
@@ -1294,7 +1296,11 @@ public String readFileAsString(Path path) throws IOException {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### getCurrentWorkingDirectoryPath
+
+获取当前工作目录。
 
 ```java
 public static String getCurrentWorkingDirectoryPath() {
@@ -1302,9 +1308,11 @@ public static String getCurrentWorkingDirectoryPath() {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### tmpDirName
 
-Returns the value of `java.io.tmpdir` system property. It appends separator if not present at the end.
+返回 `java.io.tmpdir` 系统属性的值。如果末尾没有分隔符，则追加分隔符。
 
 ```java
 public static String tmpDirName() {
@@ -1317,11 +1325,13 @@ public static String tmpDirName() {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ## Exception
 
 ### stackTraceAsString
 
-Converts exception stack trace to a String.
+将异常堆栈跟踪转换为字符串。
 
 ```java
 public static String stackTraceAsString(final Throwable throwable) {
@@ -1330,11 +1340,14 @@ public static String stackTraceAsString(final Throwable throwable) {
     return sw.toString();
 }
 ```
+
+<br>[⬆ 回到顶部](#目录)
+
 ## System
 
 ### osName
 
-Gets the name of the operating system as a lower case String.
+以小写字符串的形式获取操作系统的名称。
 
 ```java
 public static String osName() {
@@ -1342,9 +1355,11 @@ public static String osName() {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### isDebuggerEnabled
 
-Checks if debugger is attached to the JVM.
+检查JVM是否为debug模式。
 
 ```java
 public static boolean isDebuggerAttached() {
@@ -1356,13 +1371,16 @@ public static boolean isDebuggerAttached() {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ## Class
 
 ### getAllInterfaces
 
-This methods returns all the interfaces implemented by the given class and its superclasses.
+此方法返回由给定类及其超类实现的所有接口。
 
-This method works by concatenating two streams. The first stream is recursively built by creating a stream with the interface and all the interfaces implemented by the the interface. The second stream does the same for the super classes. The result is the concatenation of the two streams after removing the duplicates.
+该方法通过连接两个Stream来工作。第一个Stream是通过创建带有接口的流和接口实现的所有接口来递归构建的。
+第二个Stream对超类也是如此。其结果是删除重复项后将两个Stream连接起来。
 
 ```java
 public static List<Class<?>> getAllInterfaces(Class<?> cls) {
@@ -1374,9 +1392,11 @@ public static List<Class<?>> getAllInterfaces(Class<?> cls) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### isInnerClass
 
-This method checks if the specified class is an inner class or static nested class
+此方法检查指定的类是内部类还是静态嵌套类。
 
 ```Java
 public static boolean isInnerClass(final Class<?> cls) {
@@ -1384,11 +1404,13 @@ public static boolean isInnerClass(final Class<?> cls) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ## Enum
 
 ### getEnumMap
 
-Converts to enum to Map where key is the name and value is Enum itself.
+将枚举转换为 Map，其中 key 是枚举名，value 是枚举本身。
 
 ```java
 public static <E extends Enum<E>> Map<String, E> getEnumMap(final Class<E> enumClass) {
