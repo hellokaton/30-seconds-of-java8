@@ -10,6 +10,7 @@
 
 - 使用 <kbd>Ctrl</kbd> + <kbd>F</kbd> 或者 <kbd>command</kbd> + <kbd>F</kbd> 来查找代码片段。
 - 代码片段基于 Java8，如果你还不熟悉可以在[这里](https://zhuanlan.zhihu.com/java8)学习。
+- 代码片段翻译自 [little-java-functions](https://github.com/shekhargulati/little-java-functions)
 
 ## 目录
 
