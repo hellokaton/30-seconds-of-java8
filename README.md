@@ -578,9 +578,9 @@ public static <T> T[] sampleSize(T[] input, int n) {
 
 ### shuffle
 
-Randomizes the order of the values of an array, returning a new array.
+将数组值的顺序随机化，返回一个新数组。
 
-Uses the [Fisher-Yates algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) to reorder the elements of the array.
+根据 [Fisher-Yates 算法](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle) 重新排序数组的元素。
 
 ```java
 public static <T> T[] shuffle(T[] input) {
@@ -599,9 +599,9 @@ public static <T> T[] shuffle(T[] input) {
 
 ### similarity
 
-Returns an array of elements that appear in both arrays.
+返回出现在两个数组中的元素数组。
 
-Use `Arrays.stream().filter()` to remove values that are not part of `second`, determined using `Arrays.stream().anyMatch()`.
+使用 `Arrays.stream().filter()` 移除，然后使用 `Arrays.stream().anyMatch()` 匹配 `second` 部分的值。
 
 ```java
 public static <T> T[] similarity(T[] first, T[] second) {
@@ -614,9 +614,9 @@ public static <T> T[] similarity(T[] first, T[] second) {
 
 ### sortedIndex
 
-Returns the lowest index at which value should be inserted into array in order to maintain its sort order.
+返回值应该插入到数组中的最低索引，以保持其排序顺序。
 
-Check if the array is sorted in descending order (loosely). Use `IntStream.range().filter()` to find the appropriate index where the element should be inserted.
+检查数组是否按降序（松散地）排序。 使用 `IntStream.range().filter()` 来找到元素应该被插入的合适的索引。
 
 ```java
 public static <T extends Comparable<? super T>> int sortedIndex(T[] arr, T el) {
@@ -630,9 +630,9 @@ public static <T extends Comparable<? super T>> int sortedIndex(T[] arr, T el) {
 
 ### symmetricDifference
 
-Returns the symmetric difference between two arrays.
+返回两个数组之间的对称差异。
 
-Create a `Set` from each array, then use `Arrays.stream().filter()` on each of them to only keep values not contained in the other. Finally, concatenate both arrays and create a new array and return it.
+从每个数组中创建一个 `Set`，然后使用 `Arrays.stream().filter()` 来保持其他值不包含的值。最后，连接两个数组并创建一个新数组并返回。
 
 ```java
 public static <T> T[] symmetricDifference(T[] first, T[] second) {
@@ -648,9 +648,9 @@ public static <T> T[] symmetricDifference(T[] first, T[] second) {
 
 ### tail
 
-Returns all elements in an array except for the first one.
+返回数组中除第一个元素外的所有元素。
 
-Return `Arrays.copyOfRange(1)` if the array's `length` is more than `1`, otherwise, return the whole array.
+如果数组的长度大于1，则返回 `Arrays.copyOfRange(1)`，否则返回整个数组。
 
 ```java
 public static <T> T[] tail(T[] arr) {
