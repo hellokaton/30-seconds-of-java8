@@ -13,7 +13,7 @@
 
 ## 目录
 
-### 📚 Array
+### 📚 Array (数组相关)
 
 <details>
 <summary>详细信息</summary>
@@ -60,7 +60,7 @@
 
 <br>[⬆ 回到顶部](#目录)
 
-### ➗ Math
+### ➗ Math (数学相关)
 
 <details>
 <summary>详细信息</summary>
@@ -78,7 +78,7 @@
 <br>[⬆ 回到顶部](#目录)
 
 
-### 📜 String
+### 📜 String (字符串相关)
 
 <details>
 <summary>详细信息</summary>
@@ -112,7 +112,7 @@
 
 <br>[⬆ 回到顶部](#目录)
 
-### ⭕️ IO
+### ⭕️ IO (IO流相关)
 
 <details>
 <summary>详细信息</summary>
@@ -126,7 +126,7 @@
 
 <br>[⬆ 回到顶部](#目录)
 
-### ❌ Exception
+### ❌ Exception (异常相关)
 
 <details>
 <summary>详细信息</summary>
@@ -137,7 +137,7 @@
 
 <br>[⬆ 回到顶部](#目录)
 
-### 🖥 System
+### 🖥 System (系统相关)
 
 <details>
 <summary>详细信息</summary>
@@ -149,7 +149,7 @@
 
 <br>[⬆ 回到顶部](#目录)
 
-### 💡 Class
+### 💡 Class (类相关)
 
 <details>
 <summary>详细信息</summary>
@@ -161,7 +161,7 @@
 
 <br>[⬆ 回到顶部](#目录)
 
-### 💎 Enum
+### 💎 Enum (枚举相关)
 
 <details>
 <summary>详细信息</summary>
@@ -172,7 +172,7 @@
 
 <br>[⬆ 回到顶部](#目录)
 
-##  Array
+## Array
 
 ### chunk
 
@@ -528,9 +528,10 @@ public static <T, R> Map<T, R> pick(Map<T, R> obj, T[] arr) {
 
 ### reducedFilter
 
-Filter an array of objects based on a condition while also filtering out unspecified keys.
+根据条件筛选对象数组，同时筛选出未指定的键。
 
-Use `Arrays.stream().filter()` to filter the array based on the predicate `fn` so that it returns the objects for which the condition is true. For each filtered Map object, create a new Map with keys present in the `keys`. Finally, collect all the Map object into an array.
+使用 `Arrays.stream().filter()` 根据谓词 `fn` 过滤数组，以便返回条件为真的对象。
+对于每个过滤的Map对象，创建一个新的Map，其中包含 `keys` 中的键。最后，将Map对象收集到一个数组中。
 
 ```java
 public static Map<String, Object>[] reducedFilter(Map<String, Object>[] data, String[] keys, Predicate<Map<String, Object>> fn) {
@@ -544,9 +545,9 @@ public static Map<String, Object>[] reducedFilter(Map<String, Object>[] data, St
 
 ### sample
 
-Returns a random element from an array.
+从数组中返回一个随机元素。
 
-Use `Math.random()` to generate a random number, multiply it by `length` and round it of to the nearest whole number using `Math.floor()`. This method also works with strings.
+使用 `Math.Randoman()` 生成一个随机数，然后将它乘以数组的 `length`，然后使用 `Math.floor()` 获得一个最近的整数，该方法也适用于字符串。
 
 ```java
 public static <T> T sample(T[] arr) {
@@ -556,9 +557,9 @@ public static <T> T sample(T[] arr) {
 
 ### sampleSize
 
-Gets `n` random elements at unique keys from `array` up to the size of `array`.
+从 `array` 到 `array` 大小的唯一键获取 `n` 个随机元素。
 
-Shuffle the array using the [Fisher-Yates algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle). Use `Array.copyOfRange()` to get the first `n` elements.
+根据[Fisher-Yates算法](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle)，使用 `Array.copyOfRange()` 获得优先的 `n` 个元素。
 
 ```java
 public static <T> T[] sampleSize(T[] input, int n) {
