@@ -1,13 +1,16 @@
-![Logo](/logo.png)
-
 # 30 seconds of java8
 
-[![License](https://img.shields.io/badge/license-CC0--1.0-blue.svg)](https://github.com/biezhi/30-seconds-of-java/blob/master/LICENSE) [![Gitter chat](https://img.shields.io/badge/chat-on%20gitter-4FB999.svg)](https://gitter.im/30-seconds-of-code/Lobby) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com) [![Travis Build](https://travis-ci.org/biezhi/30-seconds-of-java.svg?branch=master)](https://travis-ci.org/biezhi/30-seconds-of-java)
+[![License](https://img.shields.io/badge/license-CC0--1.0-blue.svg)](https://github.com/biezhi/30-seconds-of-java/blob/master/LICENSE) 
+[![Gitter chat](https://img.shields.io/badge/chat-on%20gitter-4FB999.svg)](https://gitter.im/30-seconds-of-code/Lobby) 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com) 
+[![Travis Build](https://travis-ci.org/biezhi/30-seconds-of-java.svg?branch=master)](https://travis-ci.org/biezhi/30-seconds-of-java)
+[![@biezhi on zhihu](https://img.shields.io/badge/zhihu-%40biezhi-red.svg)](https://www.zhihu.com/people/biezhi)
+[![](https://img.shields.io/github/followers/biezhi.svg?style=social&label=Follow%20Me)](https://github.com/biezhi)
 
 > 你可以在30秒或更短时间内收集有用的Java8代码片段。
 
 - 使用 <kbd>Ctrl</kbd> + <kbd>F</kbd> 或者 <kbd>command</kbd> + <kbd>F</kbd> 来查找代码piandUAN
-- 代码片段基于 Java8，如果你还不熟悉可以在这里学习。
+- 代码片段基于 Java8，如果你还不熟悉可以在[这里](https://zhuanlan.zhihu.com/java8)学习。
 
 ## 目录
 
