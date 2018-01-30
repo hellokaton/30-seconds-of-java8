@@ -750,9 +750,9 @@ public static <T> T[] union(T[] first, T[] second) {
 
 ### without
 
-Filters out the elements of an array, that have one of the specified values.
+筛选出具有指定值之一的数组的元素。
 
-Use `Arrays.strean().filter()` to create an array excluding(using `!Arrays.asList(elements).contains()`) all given values.
+使用 `Arrays.strean().filter()` 创建一个数组，排除(使用 `!Arrays.asList(elements).contains()`)所有命中的值。
 
 ```java
 public static <T> T[] without(T[] arr, T... elements) {
@@ -763,9 +763,11 @@ public static <T> T[] without(T[] arr, T... elements) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### zip
 
-Creates an array of elements, grouped based on the position in the original arrays.
+根据原始数组中的位置创建元素数组。
 
 ```java
 public static List<Object[]> zip(Object[]... arrays) {
@@ -778,9 +780,11 @@ public static List<Object[]> zip(Object[]... arrays) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### zipObject
 
-Given an array of valid property identifiers and an array of values, return an object associating the properties to the values.
+给定有效的属性标识符数组和值数组，返回将属性与值关联的对象。
 
 ```java
 public static Map<String, Object> zipObject(String[] props, Object[] values) {
@@ -791,11 +795,13 @@ public static Map<String, Object> zipObject(String[] props, Object[] values) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ## Maths
 
 ### average
 
-Returns the average of an of two or more numbers.
+返回两个或两个以上数字的平均值。
 
 ```java
 public static double average(int[] arr) {
@@ -805,11 +811,13 @@ public static double average(int[] arr) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### gcd
 
-Calculates the greatest common denominator (gcd) of an array of numbers.
+计算一系列数字的最大公约数(gcd)。
 
-Use Arrays.stream().reduce() and the gcd formula (uses recursion) to calculate the greatest common denominator of an array of numbers.
+使用 `Arrays.stream().reduce()` 和 GCD（使用递归公式）计算一组数字的最大公约数。
 
 ```java
 public static OptionalInt gcd(int[] numbers) {
@@ -825,11 +833,13 @@ private static int gcd(int a, int b) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### lcm
 
-Calculates the lowest common multiple (lcm) of an array of numbers.
+计算数字数组的最低公共倍数(LCM)。
 
-Use Arrays.stream().reduce() and the lcm formula (uses recursion) to calculate the lowest common multiple of an array of numbers.
+使用 `Arrays.stream().reduce()` 和 LCM公式(使用递归)来计算数字数组的最低公共倍数。
 
 ```java
 public static OptionalInt lcm(int[] numbers) {
@@ -846,13 +856,18 @@ private static int gcd(int a, int b) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### findNextPositivePowerOfTwo
 
-Finds the next power of two greater than or equal to the value.
+查找大于或等于该值的下一个幂。
 
-This method uses left ship operator to shift 1 by the value on the right side. The right side is calculated using the `Integer.numberOfLeadingZeros` method.
+该方法使用左移运算符将1与右侧的值位移。右侧使用 `Integer.numberOfLeadingZeros`方法。
+`001 << 2` would be `100`. `100` in decimal is equal to `4`.
 
-The `Integer.numberOfLeadingZeros` give the number of zeros leading the value. For example, calling `Integer.numberOfLeadingZeros(3)` would give value as 30. This is because 3 is represented in binary as `11`. As integer has 32 bits, so there are 30 bits with 0.  The right side of the left shift operator becomes `32-30 = 2`. Left shifting 1 by 2 i.e. `001 << 2` would be `100`. `100` in decimal is equal to `4`.
+`Integer.numberOfLeadingZeros` 给出了数值前导零的数目。例如，调用 `Integer.numberOfLeadingZeros(3)` 将赋值为30。
+这是因为3在二进制中表示为 `11`。由于整数有32位，所以有30位有0位。左移运算符的右边变为 `32-30 = 2`。
+左移1，即 `001 << 2` 将是 `100`，十进制中的 `100` 等于 `4`。
 
 ```java
 public static int findNextPositivePowerOfTwo(int value) {
@@ -860,11 +875,15 @@ public static int findNextPositivePowerOfTwo(int value) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### isEven
 
-Check if the number is even.
+检查数字是否是偶数。
 
-This method uses bitwise & operator. The `0b1` is the binary representation of 1. Since, Java 7 you can write binary literals by prefixing them with either `0b` or `0B`.  The & operator will return 0 when number is even. For example, `IsEven(4)` would result in `100` `&` `001`.  The result of `&` will be `000`.
+这个方法使用按位运算符，`0b1` 是1的二进制表示。
+因为Java 7可以通过用 `0b` 或 `0B` 作为前缀来编写二进制文字。
+数字为偶数时，`＆` 运算符将返回0。 例如，`IsEven(4)` 会导致 `100` `&` `001`，`＆` 的结果将是 `000`。
 
 ```java
 public static boolean isEven(final int value) {
@@ -872,19 +891,21 @@ public static boolean isEven(final int value) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### isPowerOfTwo
 
-Checks if a value is positive power of two.
+检查一个值是2的正幂。
 
-To understand how it works let's assume we made a call `IsPowerOfTwo(4)`.
+为了理解它是如何工作的，让我们假设我们调用了 `IsPowerOfTwo(4)`。
 
-As value is greater than 0, so right side of the `&&` operator will be evaluated. 
+当值大于0时，将评估 `&&` 运算符的右侧。
 
-The result of `(~value + 1)` is equal to value itself. `~100 + 001` => `011 + 001` => `100`. This is equal to value.
+`(~value + 1)` 的结果等于值本身，`~100 + 001` => `011 + 001` => `100`。
 
-The result of `(value & value)` is value. `100` & `100` => `100`.
+`(value & value)` 的结果是value，`100` & `100` => `100`.。
 
-This will value the expression to true as value is equal to value.
+当值等于值时，这将把值表达为真值。
 
 ```Java
 public static boolean isPowerOfTwo(final int value) {
@@ -892,15 +913,19 @@ public static boolean isPowerOfTwo(final int value) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### generateRandomInt
 
-Generate a random integer between `Integer.MIN_VALUE` and `Integer.MAX_VALUE`.
+生成一个介于 `Integer.MIN_VALUE` 和 `Integer.MAX_VALUE` 之间的随机数。
 
 ```java
 public static int generateRandomInt() {
     return ThreadLocalRandom.current().nextInt();
 }
 ```
+
+<br>[⬆ 回到顶部](#目录)
 
 ## String
 
