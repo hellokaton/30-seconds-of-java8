@@ -931,7 +931,7 @@ public static int generateRandomInt() {
 
 ### anagrams
 
-Generates all anagrams of a string (contains duplicates).
+生成一个字符串的所有字符（包含重复）。
 
 ```java
 public static List<String> anagrams(String input) {
@@ -950,9 +950,11 @@ public static List<String> anagrams(String input) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### byteSize
 
-Returns the length of a string in bytes.
+以字节为单位返回字符串的长度。
 
 ```java
 public static int byteSize(String input) {
@@ -960,9 +962,11 @@ public static int byteSize(String input) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### capitalize
 
-Capitalizes the first letter of a string.
+将字符串首字母大写。
 
 ```Java
 public static String capitalize(String input, boolean lowerRest) {
@@ -973,9 +977,11 @@ public static String capitalize(String input, boolean lowerRest) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### capitalizeEveryWord
 
-Capitalizes the first letter of every word in a string.
+将字符串中每个单词的首字母大写。
 
 ```java
 public static String capitalizeEveryWord(final String input) {
@@ -985,9 +991,11 @@ public static String capitalizeEveryWord(final String input) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### countVowels
 
-Retuns `number` of vowels in provided string.
+在提供的字符串中返回元音的个数。
 
 ```java
 public static int countVowels(String input) {
@@ -995,9 +1003,11 @@ public static int countVowels(String input) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### escapeRegExp
 
-Escapes a string to use in a regular expression.
+转义要在正则表达式中使用的字符串。
 
 ```java
 public static String escapeRegExp(String input) {
@@ -1005,9 +1015,11 @@ public static String escapeRegExp(String input) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### fromCamelCase
 
-Converts a string from camelcase.
+从驼峰式转换字符串。
 
 ```java
 public static String fromCamelCase(String input, String separator) {
@@ -1017,9 +1029,11 @@ public static String fromCamelCase(String input, String separator) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### isAbsoluteUrl
 
-Returns `true` if the given string is an absolute URL, `false` otherwise.
+如果给定的字符串是绝对URL，则返回 `true`，否则返回 `false`。
 
 ```java
 public static boolean isAbsoluteUrl(String url) {
@@ -1027,9 +1041,11 @@ public static boolean isAbsoluteUrl(String url) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### isLowerCase
 
-Checks if a string is lower case.
+检查字符串是否为小写。
 
 ```java
 public static boolean isLowerCase(String input) {
@@ -1037,9 +1053,11 @@ public static boolean isLowerCase(String input) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### isUpperCase
 
-Checks if a string is upper case.
+检查字符串是否为大写。
 
 ```java
 public static boolean isUpperCase(String input) {
@@ -1047,9 +1065,11 @@ public static boolean isUpperCase(String input) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### isPalindrome
 
-Checks if a string is palindrome.
+判断一个字符串是否回文。
 
 ```java
 public static boolean isPalindrome(String input) {
@@ -1061,9 +1081,11 @@ public static boolean isPalindrome(String input) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### isNumeric
 
-Checks if a string is numeric.
+检查字符串是否为数字。
 
 ```java
 public static boolean isNumeric(final String input) {
@@ -1072,9 +1094,11 @@ public static boolean isNumeric(final String input) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### mask
 
-Replaces all but the last `num` of characters with the specified mask character.
+用指定的掩码字符替换除最后 `num` 个字符以外的所有字符。
 
 ```Java
 public static String mask(String input, int num, String mask) {
@@ -1089,9 +1113,11 @@ public static String mask(String input, int num, String mask) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### reverseString
 
-Reverses a string.
+反转字符串。
 
 ```java
 public static String reverseString(String input) {
@@ -1099,9 +1125,11 @@ public static String reverseString(String input) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### sortCharactersInString
 
-Alphabetically sorts the characters in a string.
+按字母顺序排列字符串中的字符。
 
 ```java
 public static String sortCharactersInString(String input) {
@@ -1109,9 +1137,11 @@ public static String sortCharactersInString(String input) {
 }
 ```
 
- ### splitLines
+<br>[⬆ 回到顶部](#目录)
 
-Splits a multiline string into an array of lines.
+### splitLines
+
+将多行字符串拆分为行数组。
 
 ```java
 public static String[] splitLines(String input) {
@@ -1119,9 +1149,11 @@ public static String[] splitLines(String input) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### toCamelCase
 
-Converts a string to camelcase.
+转换一个字符串为驼峰式。
 
 ```java
 public static String toCamelCase(String input) {
@@ -1135,12 +1167,13 @@ public static String toCamelCase(String input) {
             .collect(Collectors.joining());
     return s.substring(0, 1).toLowerCase() + s.substring(1);
 }
-
 ```
+
+<br>[⬆ 回到顶部](#目录)
 
 ### toKebabCase
 
-Converts a string to kebab case.
+将字符串转换为kebab大小写。
 
 ```java
 public static String toKebabCase(String input) {
@@ -1155,7 +1188,11 @@ public static String toKebabCase(String input) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### match
+
+正则匹配。
 
 ```java
 public static List<String> match(String input, String regex) {
@@ -1166,12 +1203,13 @@ public static List<String> match(String input, String regex) {
     }
     return matchedParts;
 }
-
 ```
+
+<br>[⬆ 回到顶部](#目录)
 
 ### toSnakeCase
 
-Converts a string to snake case.
+将字符串转换为蛇形小写，如 `Im_Biezhi`。
 
 ```java
 public static String toSnakeCase(String input) {
@@ -1186,9 +1224,11 @@ public static String toSnakeCase(String input) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### truncateString
 
-Truncates a string up to a specified length.
+将字符串截断到指定的长度。
 
 ```java
 public static String truncateString(String input, int num) {
@@ -1198,9 +1238,11 @@ public static String truncateString(String input, int num) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### words
 
-Converts a given string into an array of words.
+将给定的字符串转换为单词数组。
 
 ```Java
 public static String[] words(String input) {
@@ -1210,9 +1252,11 @@ public static String[] words(String input) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
+
 ### stringToIntegers
 
-Converts a String of numbers separated by space to an array of ints.
+将由空格分隔的数字字符串转换为 int 数组。
 
 ```Java
 public static int[] stringToIntegers(String numbers) {
@@ -1220,6 +1264,7 @@ public static int[] stringToIntegers(String numbers) {
 }
 ```
 
+<br>[⬆ 回到顶部](#目录)
 
 ## IO
 
