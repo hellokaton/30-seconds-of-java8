@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: snippets.SnippetsTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.064 s <<< FAILURE! - in snippets.SnippetsTests
+pick_should_pick_key_pairs_corresponding_to_keys(snippets.SnippetsTests)  Time elapsed: 0.062 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Actual and expected have the same elements but not in the same order, at index 0 actual element was:
+  <MapEntry[key="c", value=3]>
+whereas expected element was:
+  <a=1>
+
+	at snippets.SnippetsTests.pick_should_pick_key_pairs_corresponding_to_keys(SnippetsTests.java:331)
+

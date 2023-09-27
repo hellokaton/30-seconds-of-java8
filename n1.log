@@ -1,0 +1,498 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------< [0;36mio.github.biezhi:30-seconds-of-java8[0;1m >----------------[m
+[[1;34mINFO[m] [1mBuilding 30-seconds-of-java8 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m>>> [0;32mnondex-maven-plugin:2.1.1:nondex[m [1m(default-cli)[0;1m > [0;1mtest-compile[m @ [36m30-seconds-of-java8[0;1m >>>[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36m30-seconds-of-java8[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /home/hc56/30-seconds-of-java8/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36m30-seconds-of-java8[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36m30-seconds-of-java8[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] skip non existing resourceDirectory /home/hc56/30-seconds-of-java8/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36m30-seconds-of-java8[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m<<< [0;32mnondex-maven-plugin:2.1.1:nondex[m [1m(default-cli)[0;1m < [0;1mtest-compile[m @ [36m30-seconds-of-java8[0;1m <<<[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mnondex-maven-plugin:2.1.1:nondex[m [1m(default-cli)[m @ [36m30-seconds-of-java8[0;1m ---[m
+INFO: The original argline is: 
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/hc56/30-seconds-of-java8/.nondex
+nondexJarDir=.nondex
+nondexExecid=clean_oM7Djn8SfoExTLz5w3vCUzAhq1BhoZOKtFEuOMhQyD0=
+nondexLogging=CONFIG
+test=
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running snippets.[1mSnippetsTests[m
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m1[m, Failures: 0, [1;31mErrors: [0;1;31m1[m, Skipped: 0, Time elapsed: 0.091 s[1;31m <<< FAILURE![m - in snippets.[1mSnippetsTests[m
+[[1;31mERROR[m] pick_should_pick_key_pairs_corresponding_to_keys(snippets.SnippetsTests)  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	The method containsAllEntriesOf(Map<? extends String,? extends Integer>) in the type AbstractMapAssert<MapAssert<String,Integer>,Map<String,Integer>,String,Integer> is not applicable for the arguments (new SimpleEntry<>("a", 1), new SimpleEntry<>("c", 3))
+	Cannot infer type arguments for SimpleEntry<>
+
+	at snippets.SnippetsTests.pick_should_pick_key_pairs_corresponding_to_keys(SnippetsTests.java:335)
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mErrors: [m
+[[1;31mERROR[m] [1;31m  SnippetsTests.pick_should_pick_key_pairs_corresponding_to_keys:335  Unresolved...[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 1, Failures: 0, Errors: 1, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] There are test failures.
+
+Please refer to /home/hc56/30-seconds-of-java8/.nondex/clean_oM7Djn8SfoExTLz5w3vCUzAhq1BhoZOKtFEuOMhQyD0= for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=933178
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/hc56/30-seconds-of-java8/.nondex
+nondexJarDir=/home/hc56/30-seconds-of-java8/.nondex
+nondexExecid=YNwFlyj+Twr+14dUszqrHNUZwy0wiFfAVjJX78GLd9A=
+nondexLogging=CONFIG
+test=
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running snippets.[1mSnippetsTests[m
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m1[m, Failures: 0, [1;31mErrors: [0;1;31m1[m, Skipped: 0, Time elapsed: 0.004 s[1;31m <<< FAILURE![m - in snippets.[1mSnippetsTests[m
+[[1;31mERROR[m] pick_should_pick_key_pairs_corresponding_to_keys(snippets.SnippetsTests)  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	The method containsAllEntriesOf(Map<? extends String,? extends Integer>) in the type AbstractMapAssert<MapAssert<String,Integer>,Map<String,Integer>,String,Integer> is not applicable for the arguments (new SimpleEntry<>("a", 1), new SimpleEntry<>("c", 3))
+	Cannot infer type arguments for SimpleEntry<>
+
+	at snippets.SnippetsTests.pick_should_pick_key_pairs_corresponding_to_keys(SnippetsTests.java:335)
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mErrors: [m
+[[1;31mERROR[m] [1;31m  SnippetsTests.pick_should_pick_key_pairs_corresponding_to_keys:335  Unresolved...[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 1, Failures: 0, Errors: 1, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] There are test failures.
+
+Please refer to /home/hc56/30-seconds-of-java8/.nondex/YNwFlyj+Twr+14dUszqrHNUZwy0wiFfAVjJX78GLd9A= for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/hc56/30-seconds-of-java8/.nondex
+nondexJarDir=/home/hc56/30-seconds-of-java8/.nondex
+nondexExecid=2IcXHja6Z6cnwtoh1gSu11TwcIZyHVqTuojhTZTXh4=
+nondexLogging=CONFIG
+test=
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running snippets.[1mSnippetsTests[m
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m1[m, Failures: 0, [1;31mErrors: [0;1;31m1[m, Skipped: 0, Time elapsed: 0.006 s[1;31m <<< FAILURE![m - in snippets.[1mSnippetsTests[m
+[[1;31mERROR[m] pick_should_pick_key_pairs_corresponding_to_keys(snippets.SnippetsTests)  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	The method containsAllEntriesOf(Map<? extends String,? extends Integer>) in the type AbstractMapAssert<MapAssert<String,Integer>,Map<String,Integer>,String,Integer> is not applicable for the arguments (new SimpleEntry<>("a", 1), new SimpleEntry<>("c", 3))
+	Cannot infer type arguments for SimpleEntry<>
+
+	at snippets.SnippetsTests.pick_should_pick_key_pairs_corresponding_to_keys(SnippetsTests.java:335)
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mErrors: [m
+[[1;31mERROR[m] [1;31m  SnippetsTests.pick_should_pick_key_pairs_corresponding_to_keys:335  Unresolved...[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 1, Failures: 0, Errors: 1, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] There are test failures.
+
+Please refer to /home/hc56/30-seconds-of-java8/.nondex/2IcXHja6Z6cnwtoh1gSu11TwcIZyHVqTuojhTZTXh4= for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1016066
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/hc56/30-seconds-of-java8/.nondex
+nondexJarDir=/home/hc56/30-seconds-of-java8/.nondex
+nondexExecid=3fM8XZc9ZhA02+z+lecnQVhLRF5qQFef69mjqRC5UQQ=
+nondexLogging=CONFIG
+test=
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running snippets.[1mSnippetsTests[m
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m1[m, Failures: 0, [1;31mErrors: [0;1;31m1[m, Skipped: 0, Time elapsed: 0.008 s[1;31m <<< FAILURE![m - in snippets.[1mSnippetsTests[m
+[[1;31mERROR[m] pick_should_pick_key_pairs_corresponding_to_keys(snippets.SnippetsTests)  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	The method containsAllEntriesOf(Map<? extends String,? extends Integer>) in the type AbstractMapAssert<MapAssert<String,Integer>,Map<String,Integer>,String,Integer> is not applicable for the arguments (new SimpleEntry<>("a", 1), new SimpleEntry<>("c", 3))
+	Cannot infer type arguments for SimpleEntry<>
+
+	at snippets.SnippetsTests.pick_should_pick_key_pairs_corresponding_to_keys(SnippetsTests.java:335)
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mErrors: [m
+[[1;31mERROR[m] [1;31m  SnippetsTests.pick_should_pick_key_pairs_corresponding_to_keys:335  Unresolved...[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 1, Failures: 0, Errors: 1, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] There are test failures.
+
+Please refer to /home/hc56/30-seconds-of-java8/.nondex/3fM8XZc9ZhA02+z+lecnQVhLRF5qQFef69mjqRC5UQQ= for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1057510
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/hc56/30-seconds-of-java8/.nondex
+nondexJarDir=/home/hc56/30-seconds-of-java8/.nondex
+nondexExecid=VhoL1Hp499I72XleV5rgixEavDHwgidzsFqQVc0jDU=
+nondexLogging=CONFIG
+test=
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running snippets.[1mSnippetsTests[m
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m1[m, Failures: 0, [1;31mErrors: [0;1;31m1[m, Skipped: 0, Time elapsed: 0.005 s[1;31m <<< FAILURE![m - in snippets.[1mSnippetsTests[m
+[[1;31mERROR[m] pick_should_pick_key_pairs_corresponding_to_keys(snippets.SnippetsTests)  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	The method containsAllEntriesOf(Map<? extends String,? extends Integer>) in the type AbstractMapAssert<MapAssert<String,Integer>,Map<String,Integer>,String,Integer> is not applicable for the arguments (new SimpleEntry<>("a", 1), new SimpleEntry<>("c", 3))
+	Cannot infer type arguments for SimpleEntry<>
+
+	at snippets.SnippetsTests.pick_should_pick_key_pairs_corresponding_to_keys(SnippetsTests.java:335)
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mErrors: [m
+[[1;31mERROR[m] [1;31m  SnippetsTests.pick_should_pick_key_pairs_corresponding_to_keys:335  Unresolved...[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 1, Failures: 0, Errors: 1, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] There are test failures.
+
+Please refer to /home/hc56/30-seconds-of-java8/.nondex/VhoL1Hp499I72XleV5rgixEavDHwgidzsFqQVc0jDU= for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1098954
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/hc56/30-seconds-of-java8/.nondex
+nondexJarDir=/home/hc56/30-seconds-of-java8/.nondex
+nondexExecid=m7AwSStQUUd+HSlD0VQJk2cLEjOx9TH94hfyQZyIqB4=
+nondexLogging=CONFIG
+test=
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running snippets.[1mSnippetsTests[m
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m1[m, Failures: 0, [1;31mErrors: [0;1;31m1[m, Skipped: 0, Time elapsed: 0.006 s[1;31m <<< FAILURE![m - in snippets.[1mSnippetsTests[m
+[[1;31mERROR[m] pick_should_pick_key_pairs_corresponding_to_keys(snippets.SnippetsTests)  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	The method containsAllEntriesOf(Map<? extends String,? extends Integer>) in the type AbstractMapAssert<MapAssert<String,Integer>,Map<String,Integer>,String,Integer> is not applicable for the arguments (new SimpleEntry<>("a", 1), new SimpleEntry<>("c", 3))
+	Cannot infer type arguments for SimpleEntry<>
+
+	at snippets.SnippetsTests.pick_should_pick_key_pairs_corresponding_to_keys(SnippetsTests.java:335)
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mErrors: [m
+[[1;31mERROR[m] [1;31m  SnippetsTests.pick_should_pick_key_pairs_corresponding_to_keys:335  Unresolved...[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 1, Failures: 0, Errors: 1, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] There are test failures.
+
+Please refer to /home/hc56/30-seconds-of-java8/.nondex/m7AwSStQUUd+HSlD0VQJk2cLEjOx9TH94hfyQZyIqB4= for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1140398
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/hc56/30-seconds-of-java8/.nondex
+nondexJarDir=/home/hc56/30-seconds-of-java8/.nondex
+nondexExecid=0x+tKB5BfhTfDoon3yYkB12kmPr56HArGacxoqBNb0Y=
+nondexLogging=CONFIG
+test=
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running snippets.[1mSnippetsTests[m
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m1[m, Failures: 0, [1;31mErrors: [0;1;31m1[m, Skipped: 0, Time elapsed: 0.004 s[1;31m <<< FAILURE![m - in snippets.[1mSnippetsTests[m
+[[1;31mERROR[m] pick_should_pick_key_pairs_corresponding_to_keys(snippets.SnippetsTests)  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	The method containsAllEntriesOf(Map<? extends String,? extends Integer>) in the type AbstractMapAssert<MapAssert<String,Integer>,Map<String,Integer>,String,Integer> is not applicable for the arguments (new SimpleEntry<>("a", 1), new SimpleEntry<>("c", 3))
+	Cannot infer type arguments for SimpleEntry<>
+
+	at snippets.SnippetsTests.pick_should_pick_key_pairs_corresponding_to_keys(SnippetsTests.java:335)
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mErrors: [m
+[[1;31mERROR[m] [1;31m  SnippetsTests.pick_should_pick_key_pairs_corresponding_to_keys:335  Unresolved...[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 1, Failures: 0, Errors: 1, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] There are test failures.
+
+Please refer to /home/hc56/30-seconds-of-java8/.nondex/0x+tKB5BfhTfDoon3yYkB12kmPr56HArGacxoqBNb0Y= for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1181842
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/hc56/30-seconds-of-java8/.nondex
+nondexJarDir=/home/hc56/30-seconds-of-java8/.nondex
+nondexExecid=qQ4utA1enE74pfpgqWFMcTgtuZbadM+agRY0caJuFz4=
+nondexLogging=CONFIG
+test=
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running snippets.[1mSnippetsTests[m
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m1[m, Failures: 0, [1;31mErrors: [0;1;31m1[m, Skipped: 0, Time elapsed: 0.01 s[1;31m <<< FAILURE![m - in snippets.[1mSnippetsTests[m
+[[1;31mERROR[m] pick_should_pick_key_pairs_corresponding_to_keys(snippets.SnippetsTests)  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	The method containsAllEntriesOf(Map<? extends String,? extends Integer>) in the type AbstractMapAssert<MapAssert<String,Integer>,Map<String,Integer>,String,Integer> is not applicable for the arguments (new SimpleEntry<>("a", 1), new SimpleEntry<>("c", 3))
+	Cannot infer type arguments for SimpleEntry<>
+
+	at snippets.SnippetsTests.pick_should_pick_key_pairs_corresponding_to_keys(SnippetsTests.java:335)
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mErrors: [m
+[[1;31mERROR[m] [1;31m  SnippetsTests.pick_should_pick_key_pairs_corresponding_to_keys:335  Unresolved...[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 1, Failures: 0, Errors: 1, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] There are test failures.
+
+Please refer to /home/hc56/30-seconds-of-java8/.nondex/qQ4utA1enE74pfpgqWFMcTgtuZbadM+agRY0caJuFz4= for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1223286
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/hc56/30-seconds-of-java8/.nondex
+nondexJarDir=/home/hc56/30-seconds-of-java8/.nondex
+nondexExecid=lLx3cY5aRjx9L3j5jbHRjikFLYG0A8YXb+lP1qJJBU=
+nondexLogging=CONFIG
+test=
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running snippets.[1mSnippetsTests[m
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m1[m, Failures: 0, [1;31mErrors: [0;1;31m1[m, Skipped: 0, Time elapsed: 0.027 s[1;31m <<< FAILURE![m - in snippets.[1mSnippetsTests[m
+[[1;31mERROR[m] pick_should_pick_key_pairs_corresponding_to_keys(snippets.SnippetsTests)  Time elapsed: 0.016 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	The method containsAllEntriesOf(Map<? extends String,? extends Integer>) in the type AbstractMapAssert<MapAssert<String,Integer>,Map<String,Integer>,String,Integer> is not applicable for the arguments (new SimpleEntry<>("a", 1), new SimpleEntry<>("c", 3))
+	Cannot infer type arguments for SimpleEntry<>
+
+	at snippets.SnippetsTests.pick_should_pick_key_pairs_corresponding_to_keys(SnippetsTests.java:335)
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mErrors: [m
+[[1;31mERROR[m] [1;31m  SnippetsTests.pick_should_pick_key_pairs_corresponding_to_keys:335  Unresolved...[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 1, Failures: 0, Errors: 1, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] There are test failures.
+
+Please refer to /home/hc56/30-seconds-of-java8/.nondex/lLx3cY5aRjx9L3j5jbHRjikFLYG0A8YXb+lP1qJJBU= for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1264730
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/hc56/30-seconds-of-java8/.nondex
+nondexJarDir=/home/hc56/30-seconds-of-java8/.nondex
+nondexExecid=y2qlIw4n9nNHWnRB1Lp0I9FrIqIHwc+ueUr4kNAw=
+nondexLogging=CONFIG
+test=
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running snippets.[1mSnippetsTests[m
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m1[m, Failures: 0, [1;31mErrors: [0;1;31m1[m, Skipped: 0, Time elapsed: 0.042 s[1;31m <<< FAILURE![m - in snippets.[1mSnippetsTests[m
+[[1;31mERROR[m] pick_should_pick_key_pairs_corresponding_to_keys(snippets.SnippetsTests)  Time elapsed: 0.02 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	The method containsAllEntriesOf(Map<? extends String,? extends Integer>) in the type AbstractMapAssert<MapAssert<String,Integer>,Map<String,Integer>,String,Integer> is not applicable for the arguments (new SimpleEntry<>("a", 1), new SimpleEntry<>("c", 3))
+	Cannot infer type arguments for SimpleEntry<>
+
+	at snippets.SnippetsTests.pick_should_pick_key_pairs_corresponding_to_keys(SnippetsTests.java:335)
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mErrors: [m
+[[1;31mERROR[m] [1;31m  SnippetsTests.pick_should_pick_key_pairs_corresponding_to_keys:335  Unresolved...[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 1, Failures: 0, Errors: 1, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] There are test failures.
+
+Please refer to /home/hc56/30-seconds-of-java8/.nondex/y2qlIw4n9nNHWnRB1Lp0I9FrIqIHwc+ueUr4kNAw= for the individual test results.
+Please refer to dump files (if any exist) [date]-jvmRun[N].dump, [date].dumpstream and [date]-jvmRun[N].dumpstream.
+INFO: Adding excluded groups to newly created one
+INFO: Creating new argline for Surefire
+CONFIG: nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1306174
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/hc56/30-seconds-of-java8/.nondex
+nondexJarDir=/home/hc56/30-seconds-of-java8/.nondex
+nondexExecid=yBBv96AEsOxDEKYUnTy3D4vYWvzcsi7TwShgtCmGk=
+nondexLogging=CONFIG
+test=
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running snippets.[1mSnippetsTests[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 s - in snippets.[1mSnippetsTests[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1;32mTests run: 1, Failures: 0, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] NonDex SUMMARY:
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=933178 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/home/hc56/30-seconds-of-java8/.nondex" -DnondexJarDir="/home/hc56/30-seconds-of-java8/.nondex" -DnondexExecid=YNwFlyj+Twr+14dUszqrHNUZwy0wiFfAVjJX78GLd9A= -DnondexLogging=CONFIG
+[[1;34mINFO[m] No Test Failed with this configuration.
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=974622 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/home/hc56/30-seconds-of-java8/.nondex" -DnondexJarDir="/home/hc56/30-seconds-of-java8/.nondex" -DnondexExecid=2IcXHja6Z6cnwtoh1gSu11TwcIZyHVqTuojhTZTXh4= -DnondexLogging=CONFIG
+[[1;34mINFO[m] No Test Failed with this configuration.
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1016066 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/home/hc56/30-seconds-of-java8/.nondex" -DnondexJarDir="/home/hc56/30-seconds-of-java8/.nondex" -DnondexExecid=3fM8XZc9ZhA02+z+lecnQVhLRF5qQFef69mjqRC5UQQ= -DnondexLogging=CONFIG
+[[1;34mINFO[m] No Test Failed with this configuration.
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1057510 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/home/hc56/30-seconds-of-java8/.nondex" -DnondexJarDir="/home/hc56/30-seconds-of-java8/.nondex" -DnondexExecid=VhoL1Hp499I72XleV5rgixEavDHwgidzsFqQVc0jDU= -DnondexLogging=CONFIG
+[[1;34mINFO[m] No Test Failed with this configuration.
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1098954 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/home/hc56/30-seconds-of-java8/.nondex" -DnondexJarDir="/home/hc56/30-seconds-of-java8/.nondex" -DnondexExecid=m7AwSStQUUd+HSlD0VQJk2cLEjOx9TH94hfyQZyIqB4= -DnondexLogging=CONFIG
+[[1;34mINFO[m] No Test Failed with this configuration.
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1140398 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/home/hc56/30-seconds-of-java8/.nondex" -DnondexJarDir="/home/hc56/30-seconds-of-java8/.nondex" -DnondexExecid=0x+tKB5BfhTfDoon3yYkB12kmPr56HArGacxoqBNb0Y= -DnondexLogging=CONFIG
+[[1;34mINFO[m] No Test Failed with this configuration.
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1181842 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/home/hc56/30-seconds-of-java8/.nondex" -DnondexJarDir="/home/hc56/30-seconds-of-java8/.nondex" -DnondexExecid=qQ4utA1enE74pfpgqWFMcTgtuZbadM+agRY0caJuFz4= -DnondexLogging=CONFIG
+[[1;34mINFO[m] No Test Failed with this configuration.
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1223286 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/home/hc56/30-seconds-of-java8/.nondex" -DnondexJarDir="/home/hc56/30-seconds-of-java8/.nondex" -DnondexExecid=lLx3cY5aRjx9L3j5jbHRjikFLYG0A8YXb+lP1qJJBU= -DnondexLogging=CONFIG
+[[1;34mINFO[m] No Test Failed with this configuration.
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1264730 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/home/hc56/30-seconds-of-java8/.nondex" -DnondexJarDir="/home/hc56/30-seconds-of-java8/.nondex" -DnondexExecid=y2qlIw4n9nNHWnRB1Lp0I9FrIqIHwc+ueUr4kNAw= -DnondexLogging=CONFIG
+[[1;34mINFO[m] No Test Failed with this configuration.
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] mvn nondex:nondex  -DnondexFilter='.*' -DnondexMode=FULL -DnondexSeed=1306174 -DnondexStart=0 -DnondexEnd=9223372036854775807 -DnondexPrintstack=false -DnondexDir="/home/hc56/30-seconds-of-java8/.nondex" -DnondexJarDir="/home/hc56/30-seconds-of-java8/.nondex" -DnondexExecid=yBBv96AEsOxDEKYUnTy3D4vYWvzcsi7TwShgtCmGk= -DnondexLogging=CONFIG
+[[1;34mINFO[m] No Test Failed with this configuration.
+[[1;34mINFO[m] *********
+[[1;34mINFO[m] All tests pass without NonDex shuffling
+[[1;34mINFO[m] ####################
+[[1;34mINFO[m] Across all seeds:
+[[1;34mINFO[m] Test results can be found at: 
+[[1;34mINFO[m] file:///home/hc56/30-seconds-of-java8/.nondex/YNwFlyj+Twr+14dUszqrHNUZwy0wiFfAVjJX78GLd9A=/test_results.html
+[[1;34mINFO[m] [NonDex] The id of this run is: YNwFlyj+Twr+14dUszqrHNUZwy0wiFfAVjJX78GLd9A=
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  11.762 s
+[[1;34mINFO[m] Finished at: 2023-09-26T22:40:40-05:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m

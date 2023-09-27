@@ -1,0 +1,11 @@
+nondexFilter=.*
+nondexMode=FULL
+nondexSeed=1223286
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/hc56/30-seconds-of-java8/.nondex
+nondexJarDir=/home/hc56/30-seconds-of-java8/.nondex
+nondexExecid=R2VJzYkYj697m8PG4jy5RiKN7nJdvG4Bco6wZGJa8j0=
+nondexLogging=CONFIG
+test=

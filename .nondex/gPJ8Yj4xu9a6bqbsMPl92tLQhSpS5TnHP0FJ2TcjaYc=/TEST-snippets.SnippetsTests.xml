@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="snippets.SnippetsTests" time="0.177" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="license.skipAddThirdParty" value="true"/>
+    <property name="skip.grunt" value="true"/>
+    <property name="java.vm.vendor" value="Ubuntu"/>
+    <property name="skip.bower" value="true"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://ubuntu.com/"/>
+    <property name="nondexRuns" value="10"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="maven.conf" value="/usr/share/maven/conf"/>
+    <property name="license.skipCheckLicense" value="true"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="maven.antrun.skip" value="true"/>
+    <property name="rat.skip" value="true"/>
+    <property name="gpg.skip" value="true"/>
+    <property name="skip.webpack" value="true"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
+    <property name="skip.gulp" value="true"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher edu.illinois:nondex-maven-plugin:2.1.1:nondex -pl . -Dtest=snippets.SnippetsTests#pick_should_pick_key_pairs_corresponding_to_keys -Dbasepom.check.skip-prettier -Dgpg.skip -Dfindbugs.skip=true -Drat.skip -Dcheckstyle.skip -Denforcer.skip -Dspotbugs.skip -Dmaven.test.failure.ignore -Djacoco.skip -Danimal.sniffer.skip -Dmaven.antrun.skip -Dfmt.skip -Dskip.npm -Dlicense.skipCheckLicense -Dlicense.skipAddThirdParty -Dfindbugs.skip -Dlicense.skip -DskipDockerBuild -DskipDockerTag -DskipDockerPush -DskipDocker -Dskip.npm -Dskip.yarn -Dskip.bower -Dskip.grunt -Dskip.gulp -Dskip.jspm -Dskip.karma -Dskip.webpack -DnondexRuns=10"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="test" value="snippets.SnippetsTests#pick_should_pick_key_pairs_corresponding_to_keys"/>
+    <property name="skipDockerTag" value="true"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/hc56"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="skipDockerPush" value="true"/>
+    <property name="java.version.date" value="2023-08-24"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="jacoco.skip" value="true"/>
+    <property name="fmt.skip" value="true"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="checkstyle.skip" value="true"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="skip.npm" value="true"/>
+    <property name="skipDockerBuild" value="true"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="skip.jspm" value="true"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.20.1+1-post-Ubuntu-0ubuntu120.04"/>
+    <property name="user.name" value="hc56"/>
+    <property name="findbugs.skip" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="os.version" value="5.4.0-159-generic"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-lts"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="basepom.check.skip-prettier" value="true"/>
+    <property name="java.version" value="11.0.20.1"/>
+    <property name="user.dir" value="/home/hc56/30-seconds-of-java8"/>
+    <property name="license.skip" value="true"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/hc56/30-seconds-of-java8"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="animal.sniffer.skip" value="true"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="spotbugs.skip" value="true"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vm.version" value="11.0.20.1+1-post-Ubuntu-0ubuntu120.04"/>
+    <property name="java.specification.maintenance.version" value="2"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="enforcer.skip" value="true"/>
+    <property name="skip.yarn" value="true"/>
+    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
+    <property name="maven.test.failure.ignore" value="true"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="skipDocker" value="true"/>
+    <property name="skip.karma" value="true"/>
+  </properties>
+  <testcase name="pick_should_pick_key_pairs_corresponding_to_keys" classname="snippets.SnippetsTests" time="0.175"/>
+</testsuite>

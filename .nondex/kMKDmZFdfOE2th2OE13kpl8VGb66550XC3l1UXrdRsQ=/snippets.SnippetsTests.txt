@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: snippets.SnippetsTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.007 s <<< FAILURE! - in snippets.SnippetsTests
+pick_should_pick_key_pairs_corresponding_to_keys(snippets.SnippetsTests)  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	The method of(String, int, String, int) is undefined for the type Map
+
+	at snippets.SnippetsTests.pick_should_pick_key_pairs_corresponding_to_keys(SnippetsTests.java:331)
+

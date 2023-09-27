@@ -322,11 +322,12 @@ public class SnippetsTests {
 
     @Test
     public void pick_should_pick_key_pairs_corresponding_to_keys() throws Exception {
-        Map<String, Integer> obj = new HashMap<>();
-        obj.put("a", 1);
-        obj.put("b", 2);
-        obj.put("c", 3);
-
+        
+        Map<String, Integer> obj = new LinkedHashMap<>();    
+        obj.put("a", 1);    
+        obj.put("b", 2);    
+        obj.put("c", 3);    
+      
         Map<String, Integer> expected = new HashMap<>();
         expected.put("a", 1);
         expected.put("c", 3);

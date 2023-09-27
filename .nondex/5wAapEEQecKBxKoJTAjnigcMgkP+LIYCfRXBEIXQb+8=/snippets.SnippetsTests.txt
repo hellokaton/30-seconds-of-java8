@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: snippets.SnippetsTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.02 s <<< FAILURE! - in snippets.SnippetsTests
+pick_should_pick_key_pairs_corresponding_to_keys(snippets.SnippetsTests)  Time elapsed: 0.019 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problem: 
+	The method containsExactlyInAnyOrder(new SimpleEntry<>("a", 1), new SimpleEntry<>("c", 3)) is undefined for the type MapAssert<String,Integer>
+
+	at snippets.SnippetsTests.pick_should_pick_key_pairs_corresponding_to_keys(SnippetsTests.java:331)
+
