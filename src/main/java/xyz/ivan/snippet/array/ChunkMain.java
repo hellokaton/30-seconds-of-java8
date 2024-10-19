@@ -29,7 +29,7 @@ public class ChunkMain {
         return IntStream.iterate(0, i -> i + size)
                 .limit((long) Math.ceil((double) arr.length / size))
                 .mapToObj(cur -> Arrays.copyOfRange(arr, cur, cur + size > arr.length ? arr.length : cur + size))
-                .toArray(i -> new int[i][]);
+                .toArray(int[][]::new);
     }
 
 
