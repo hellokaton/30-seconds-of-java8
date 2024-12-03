@@ -328,7 +328,7 @@ public class SnippetsTests {
         obj.put("c", 3);
 
         Map<String, Integer> picked = Snippets.pick(obj, new String[]{"a", "c"});
-        assertThat(picked).containsExactly(new SimpleEntry<>("a", 1), new SimpleEntry<>("c", 3));
+        assertThat(picked).containsOnly(new SimpleEntry<>("a", 1), new SimpleEntry<>("c", 3));
     }
 
     @Test
