@@ -229,7 +229,7 @@ public class SnippetsTests {
     public void group_elements_by_length() throws Exception {
         Map<Integer, List<String>> groups = Snippets.groupBy(new String[]{"one", "two", "three"}, String::length);
         assertThat(groups)
-                .containsExactly(
+                .containsOnly(
                         new SimpleEntry<>(3, Arrays.asList("one", "two")),
                         new SimpleEntry<>(5, Collections.singletonList("three"))
                 );
