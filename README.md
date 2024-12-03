@@ -369,7 +369,8 @@ public static int lastIndexOf(int[] elements, int el) {
 ```java
 public static int[] filterNonUnique(int[] elements) {
     return Arrays.stream(elements)
-            .filter(el -> indexOf(elements, el) == lastIndexOf(elements, el))
+            .filter(el -> indexOf(elements, el) != lastIndexOf(elements, el))
+            .distinct()
             .toArray();
 }
 ```
@@ -381,7 +382,6 @@ public static int[] filterNonUnique(int[] elements) {
 使数组扁平。
 
 使用 `Arrays.stream().flatMapToInt().toArray()` 创建一个新数组。
-
 
 ```java
 public static int[] flatten(Object[] elements) {
